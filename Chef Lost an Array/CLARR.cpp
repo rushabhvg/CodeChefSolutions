@@ -15,16 +15,6 @@ using namespace std;
 #define ll long long int
 #define vll std::vector<long long int>
 
-bool chkD(vll arrA, ll d) {
-    for(int i=0; i<arrA.size()-1; i++) if(abs(arrA[i]-arrA[i+1])>d) return false;
-    return true;
-}
-
-bool chkV(vll arrV) {
-    for(int i=0; i<arrV.size(); i++) if(!arrV[i]) return false;
-    return true;
-}
-
 void solve() {
     ll n, d;
     cin>>n>>d;
